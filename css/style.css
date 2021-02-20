@@ -58,7 +58,7 @@
 }
 
 .header_intro {
-  height: 800px;
+  height: 825px;
   background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -114,9 +114,10 @@
 .header_title {
   font-family: "Banny Bold Round";
   font-size: 96px;
-  line-height: 0px;
+  line-height: 130px;
   text-transform: uppercase;
   position: relative;
+  margin: 0;
 }
 .header_title::after {
   content: "";
@@ -126,8 +127,8 @@
   background: #E8C300;
   border-radius: 50px;
   position: absolute;
-  margin-bottom: -50px;
-  bottom: -25px;
+  margin-bottom: -15px;
+  bottom: 0;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -197,6 +198,83 @@
 .down_btn:hover {
   background-color: #b3b3b3;
   transition: background-color 0.2s linear;
+}
+
+.section_title {
+  font-family: "Banny Bold Round";
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+}
+.section_title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5.11px;
+  background: #E8C300;
+  border-radius: 50px;
+  position: absolute;
+  margin-bottom: -15px;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.section_subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.section_text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.about {
+  margin-top: 100px;
+}
+
+.about_content {
+  text-align: center;
+}
+
+.about_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 48%;
+  padding: 0 15px;
+}
+
+.section_img {
+  width: 48%;
+  position: relative;
+  z-index: 50;
+}
+
+.img_main {
+  max-width: 100%;
+}
+
+.img_second {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  z-index: 100;
+  max-width: 100%;
 }
 
 html {
