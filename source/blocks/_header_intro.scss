@@ -1,0 +1,140 @@
+.header_intro{
+	height: 800px;
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	padding-top: 25px;
+}
+
+.header_wrap{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+
+}
+.header_inner{
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	color: $firstColor;
+}
+.timetable{
+	display: inline;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 12px;
+
+	transform: rotate(-90deg);
+	position: relative;
+	left: -115px;
+}
+.header_content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-left: -200px;
+}
+
+.header_text{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.5em;	
+	text-transform: uppercase;
+
+	margin: 0;
+}
+.header_title{
+	font-family: $titleFont;
+	font-size: 96px;
+	line-height: 0px;
+	text-transform: uppercase;
+	position: relative;
+
+	&::after{
+		@include yellow_line;
+	}
+	
+}
+.btn_wrap{
+	display: block;
+	margin-top: 50px;
+}
+.btn{
+	display: inline-block;
+	border: none;
+	background:none;
+	cursor: pointer;
+
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 20px;
+	color:$firstColor;
+
+	border: 1px solid $firstColor;	
+	border-radius: 5px;
+
+	&:hover{
+		background: #E8C300;
+		transition: background 0.2s linear;
+	}
+
+}
+.btn-header{
+	width: 200px;
+	padding: 19px 0;
+}
+.btn+.btn{
+	margin-left: 40px;
+}
+.header_social{
+	display: flex;
+	flex-direction: column;
+
+}
+.social_item{
+	display: flex;
+	justify-content: center;
+	width: 58px;
+	height: 58px;
+
+	border: 1px solid $firstColor;
+	border-radius: 50%;
+
+	margin: 10px 0;
+
+	&:hover{
+		background-color: lighten($secondColor, 10%);
+		transition: background-color 0.2s linear;
+	}
+}
+
+.down_btn{
+	display: inline-block;
+	border: none;
+	background:none;
+	cursor: pointer;
+
+	width: 40px;
+	height: 40px;
+	background-color: $firstColor;
+	border-radius: 50%;
+
+	margin-bottom: 93px;
+
+	&:hover{
+		background-color: darken($firstColor,30%);
+		transition: background-color 0.2s linear;
+	}
+
+}
