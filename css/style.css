@@ -245,10 +245,9 @@
   text-align: center;
 }
 
-.about_wrap {
+.section_wrap {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .section_content {
@@ -256,10 +255,12 @@
   flex-direction: column;
   justify-content: center;
   width: 48%;
+  text-align: center;
   padding: 0 15px;
 }
 
 .section_img {
+  text-align: right;
   width: 48%;
   position: relative;
   z-index: 50;
@@ -275,6 +276,10 @@
   right: 20%;
   z-index: 100;
   max-width: 100%;
+}
+
+.team {
+  background: url(../../img/team-bg.jpg) no-repeat center;
 }
 
 html {
