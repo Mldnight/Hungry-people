@@ -200,70 +200,13 @@
   transition: background-color 0.2s linear;
 }
 
-.section_title {
-  font-family: "Banny Bold Round";
-  font-size: 36px;
-  line-height: 48px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  position: relative;
-}
-.section_title::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 5.11px;
-  background: #E8C300;
-  border-radius: 50px;
-  position: absolute;
-  margin-bottom: -15px;
-  bottom: 0;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-
-.section_subtitle {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.section_text {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-}
-
 .about {
-  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 87px;
 }
 
 .about_content {
   text-align: center;
-}
-
-.section_wrap {
-  display: flex;
-  justify-content: center;
-}
-
-.section_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 48%;
-  text-align: center;
-  padding: 0 15px;
-}
-
-.section_img {
-  text-align: right;
-  width: 48%;
-  position: relative;
-  z-index: 50;
 }
 
 .img_main {
@@ -280,6 +223,18 @@
 
 .team {
   background: url(../../img/team-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+.section_name {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  padding: 40px 0;
 }
 
 .section_title {
@@ -311,12 +266,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
+  margin-bottom: 30px;
 }
 
 .section_text {
   font-style: normal;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 28px;
 }
 
 .section_wrap {
@@ -342,6 +298,12 @@
 
 .txt-color {
   color: white;
+}
+
+.speciality {
+  background: url(../../img/specialty-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-bottom: 100px;
 }
 
 html {

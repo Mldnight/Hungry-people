@@ -1,3 +1,13 @@
+.section_name{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    
+    padding: 40px 0;
+}
 
 .section_title{
 	font-family: $titleFont;
@@ -22,11 +32,13 @@
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 28px;
+    
+    margin-bottom: 30px;
 }
 .section_text{
 	font-style: normal;
 	font-size: 14px;
-	line-height: 18px;
+	line-height: 28px;
 
 }
 
