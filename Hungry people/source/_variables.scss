@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),       
+       url('../fonts/open-sans-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+      
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+ 
+  src: local(''),      
+       url('../fonts/open-sans-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Banny Round';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Banny Round'), url('../fonts/Banny-Round.woff') format('woff');
+    }
+    
+
+@font-face {
+    font-family: 'Banny Light Round';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Banny Light Round'), url('../fonts/Banny-LightRound.woff') format('woff');
+    }
+    
+
+@font-face {
+    font-family: 'Banny Bold Round';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Banny Bold Round'), url('../fonts/Banny-BoldRound.woff') format('woff');
+    }
+
+$mainFont:'Open Sans', sans-serif;
+$titleFont:'Banny Bold Round';
+
+$firstColor: white;
+$secondColor:black;

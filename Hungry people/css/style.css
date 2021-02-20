@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/open-sans-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/open-sans-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Banny Round";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Banny Round"), url("../fonts/Banny-Round.woff") format("woff");
+}
+@font-face {
+  font-family: "Banny Light Round";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Banny Light Round"), url("../fonts/Banny-LightRound.woff") format("woff");
+}
+@font-face {
+  font-family: "Banny Bold Round";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Banny Bold Round"), url("../fonts/Banny-BoldRound.woff") format("woff");
+}
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 40px 0;
+}
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_img {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+}
+
+.nav {
+  width: 50%;
+}
+.nav_link {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 45px;
+}
+.nav-left {
+  text-align: left;
+}
+.nav-right {
+  text-align: right;
+}
+
+.header_intro {
+  height: 800px;
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+.header_wrap {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.timetable {
+  display: inline;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  transform: rotate(-90deg);
+  position: relative;
+  left: -115px;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -200px;
+}
+
+.header_text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.header_title {
+  font-family: "Banny Bold Round";
+  font-size: 96px;
+  line-height: 0px;
+  text-transform: uppercase;
+  position: relative;
+}
+.header_title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5.11px;
+  background: #E8C300;
+  border-radius: 50px;
+  position: absolute;
+  margin-bottom: -50px;
+  bottom: -25px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn_wrap {
+  display: block;
+  margin-top: 50px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #E8C300;
+  transition: background 0.2s linear;
+}
+
+.btn-header {
+  width: 200px;
+  padding: 19px 0;
+}
+
+.btn + .btn {
+  margin-left: 40px;
+}
+
+.header_social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social_item {
+  display: flex;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+.social_item:hover {
+  background-color: #1a1a1a;
+  transition: background-color 0.2s linear;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1310px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
