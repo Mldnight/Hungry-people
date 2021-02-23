@@ -1,0 +1,48 @@
+.booking{
+    padding-top: 100px;
+}
+.form_book{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 563px;
+    justify-content: space-between;
+    
+    margin-top: 10px;
+}
+
+.booking_text{
+    text-align: center;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 12px;
+
+    color: rgba(51, 51, 51, 0.5);
+    
+    padding: 45px 0;
+}
+
+.btn_book{
+    flex-grow: 2;
+    background: #E8C300;
+    color:$firstColor;
+    
+    padding: 20px 0;
+}
+
+.input{
+    width: 277px;    
+    
+    font-size: 14px;
+    line-height: 19px;
+    text-indent: 20px;
+    color: rgba(51, 51, 51, 0.5);
+    
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+    
+    padding: 20px 0;
+    
+    margin-bottom: 10px;
+    
+}
