@@ -147,7 +147,7 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 20px;
-  color: white;
+  text-transform: uppercase;
   border: 1px solid white;
   border-radius: 5px;
 }
@@ -159,6 +159,7 @@
 .btn-header {
   width: 200px;
   padding: 19px 0;
+  color: white;
 }
 
 .btn + .btn {
@@ -285,6 +286,7 @@
   flex-direction: column;
   justify-content: center;
   width: 48%;
+  align-items: center;
   text-align: center;
   padding: 0 15px;
 }
@@ -306,6 +308,47 @@
   padding-bottom: 100px;
 }
 
+.booking {
+  padding-top: 100px;
+}
+
+.form_book {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 563px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.booking_text {
+  text-align: center;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(51, 51, 51, 0.5);
+  padding: 45px 0;
+}
+
+.btn_book {
+  flex-grow: 2;
+  background: #E8C300;
+  color: white;
+  padding: 20px 0;
+}
+
+.input {
+  width: 277px;
+  font-size: 14px;
+  line-height: 19px;
+  text-indent: 20px;
+  color: rgba(51, 51, 51, 0.5);
+  background: #E5E5E5;
+  border-radius: 5px;
+  border: none;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
 html {
   font-family: "Open Sans", sans-serif;
 }
@@ -316,4 +359,8 @@ html {
   height: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.bold {
+  font-weight: bold;
 }

@@ -79,7 +79,7 @@
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 20px;
-	color:$firstColor;
+	text-transform: uppercase;
 
 	border: 1px solid $firstColor;	
 	border-radius: 5px;
@@ -93,6 +93,7 @@
 .btn-header{
 	width: 200px;
 	padding: 19px 0;
+    color:$firstColor;
 }
 .btn+.btn{
 	margin-left: 40px;

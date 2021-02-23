@@ -5,6 +5,7 @@
 @import "blocks/team";
 @import "blocks/sectionGeneral";
 @import "blocks/specialties";
+@import "blocks/booking";
 
 html{
 	font-family: $mainFont;
@@ -15,4 +16,8 @@ html{
 	height: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+
+.bold{
+    font-weight: bold;
 }
