@@ -1,3 +1,8 @@
+
+.section_wrap{
+	display: flex;
+	justify-content: center;	
+}
 .section_name{
     font-weight: bold;
     font-size: 12px;
@@ -8,13 +13,20 @@
     
     padding: 40px 0;
 }
-
+.section_content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 48%;
+    align-items: center;
+    text-align: center;
+    
+	padding: 0 15px;
+}
 .section_title{
 	font-family: $titleFont;
 	font-size: 36px;
 	line-height: 48px;
-
-
 	text-align: center;
 	text-transform: uppercase;
 
@@ -32,32 +44,15 @@
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 28px;
-    
+    text-align: center;
     margin-bottom: 30px;
 }
 .section_text{
 	font-style: normal;
 	font-size: 14px;
 	line-height: 28px;
-
 }
 
-.section_wrap{
-	display: flex;
-	justify-content: center;
-	
-}
-
-.section_content{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 48%;
-    align-items: center;
-    text-align: center;
-    
-	padding: 0 15px;
-}
 .section_img{
     text-align: right;
 	width: 48%;	
