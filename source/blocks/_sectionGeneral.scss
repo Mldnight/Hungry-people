@@ -6,7 +6,7 @@
 .section_name{
     font-weight: bold;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 20px;
     text-align: center;
     letter-spacing: 0.5em;
     text-transform: uppercase;
@@ -17,7 +17,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 48%;
+	width: 50%;
     align-items: center;
     text-align: center;
     
@@ -51,13 +51,23 @@
 	font-style: normal;
 	font-size: 14px;
 	line-height: 28px;
+
 }
 
 .section_img{
     text-align: right;
-	width: 48%;	
+	width: 50%;	
 	position: relative;
 	z-index: 50;
+	// &:after{
+	// 	position: absolute;
+	// 	top: 20%;
+	// 	left: 0;	
+	// 	content: url(../img/border.png);
+	// }
+	&-rt{
+
+	}	
 }
 
 .txt-color{

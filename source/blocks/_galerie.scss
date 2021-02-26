@@ -1,0 +1,13 @@
+.galerie_wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.galerie_item{
+	width: 25%;
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+}

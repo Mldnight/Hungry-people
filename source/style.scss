@@ -7,10 +7,24 @@
 @import "blocks/specialties";
 @import "blocks/booking";
 @import "blocks/menu";
+@import "blocks/events";
+@import "blocks/galerie";
+@import "blocks/contact";
+@import "blocks/footer";
 
 html{
 	font-family: $mainFont;
 }
+img{
+	max-width: 100%;
+	height: auto;
+}
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
 .container{
 	max-width: 1310px;
 	width: 100%;
