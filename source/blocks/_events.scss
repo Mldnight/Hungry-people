@@ -14,3 +14,41 @@
 	border-radius: 5px;
 	padding: 45px 0;
 }
+
+.event_img{
+	position: relative;
+	
+	max-width: 475px;
+    max-height:  475px;
+        margin: 0 auto;
+}
+
+.event_text{
+	font-family: $titleFont;
+	font-size: 24px;
+	line-height: 24px;
+	color: #FFFFFF;
+	text-indent: 20px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.event_name{
+	background-color: black;
+	border: 1px solid black;
+	display: flex;
+	width: 100%;
+	padding: 28px 0;
+}
+.rotate-right{
+	transform: rotate(90deg);
+	transform-origin: top right;
+	position: absolute;
+}
+.rotate-left{
+	transform: rotate(-90deg);
+	transform-origin: bottom left;
+	position: absolute;
+	bottom: 0;
+	left: 80px;
+}
+

@@ -1,7 +1,8 @@
 
 .section_wrap{
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
+	align-items: center;
 }
 .section_name{
     font-weight: bold;
@@ -17,11 +18,10 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 50%;
+	width: 47%;
     align-items: center;
     text-align: center;
-    
-	padding: 0 15px;
+    padding: 0 15px;
 }
 .section_title{
 	font-family: $titleFont;
@@ -45,7 +45,6 @@
 	font-size: 18px;
 	line-height: 28px;
     text-align: center;
-    margin-bottom: 30px;
 }
 .section_text{
 	font-style: normal;
@@ -55,19 +54,10 @@
 }
 
 .section_img{
-    text-align: right;
-	width: 50%;	
-	position: relative;
-	z-index: 50;
-	// &:after{
-	// 	position: absolute;
-	// 	top: 20%;
-	// 	left: 0;	
-	// 	content: url(../img/border.png);
-	// }
-	&-rt{
-
-	}	
+	width: 47%;	
+	text-align: center;	
+	padding: 0 15px;
+	line-height: 0;
 }
 
 .txt-color{

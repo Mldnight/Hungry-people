@@ -28,6 +28,118 @@
   font-weight: normal;
   src: local("Banny Bold Round"), url("../fonts/Banny-BoldRound.woff") format("woff");
 }
+.btn {
+  display: inline-block;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.btn_form {
+  flex-grow: 2;
+  background: #E8C300;
+  color: white;
+  padding: 20px 0;
+}
+.btn_form:hover {
+  background-color: #cfae00;
+  transition: background 0.2s linear;
+}
+
+.input {
+  width: 277px;
+  font-size: 14px;
+  line-height: 19px;
+  text-indent: 20px;
+  color: rgba(51, 51, 51, 0.5);
+  background: #E5E5E5;
+  border-radius: 5px;
+  border: none;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+.section_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_name {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  padding: 40px 0;
+}
+
+.section_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 47%;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.section_title {
+  font-family: "Banny Bold Round";
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+}
+.section_title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5.11px;
+  background: #E8C300;
+  border-radius: 50px;
+  position: absolute;
+  margin-bottom: -15px;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.section_subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.section_text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.section_img {
+  width: 47%;
+  text-align: center;
+  padding: 0 15px;
+  line-height: 0;
+}
+
+.txt-color {
+  color: white;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -139,27 +251,14 @@
   margin-top: 50px;
 }
 
-.btn {
-  display: inline-block;
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 20px;
-  text-transform: uppercase;
-  border: 1px solid white;
-  border-radius: 5px;
-}
-.btn:hover {
-  background: #E8C300;
-  transition: background 0.2s linear;
-}
-
 .btn-header {
   width: 200px;
   padding: 19px 0;
   color: white;
+}
+.btn-header:hover {
+  background: #E8C300;
+  transition: background 0.2s linear;
 }
 
 .btn + .btn {
@@ -206,100 +305,10 @@
   padding-bottom: 87px;
 }
 
-.about_content {
-  text-align: center;
-}
-
-.img_main {
-  max-width: 100%;
-}
-
-.img_second {
-  position: absolute;
-  top: 20%;
-  right: 20%;
-  z-index: 100;
-  max-width: 100%;
-}
-
 .team {
   background: url(../img/team-bg.jpg) no-repeat center;
   background-size: cover;
   padding-bottom: 100px;
-}
-
-.section_wrap {
-  display: flex;
-  justify-content: center;
-}
-
-.section_name {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.5em;
-  text-transform: uppercase;
-  padding: 40px 0;
-}
-
-.section_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  align-items: center;
-  text-align: center;
-  padding: 0 15px;
-}
-
-.section_title {
-  font-family: "Banny Bold Round";
-  font-size: 36px;
-  line-height: 48px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  position: relative;
-}
-.section_title::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 5.11px;
-  background: #E8C300;
-  border-radius: 50px;
-  position: absolute;
-  margin-bottom: -15px;
-  bottom: 0;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-
-.section_subtitle {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.section_text {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 28px;
-}
-
-.section_img {
-  text-align: right;
-  width: 50%;
-  position: relative;
-  z-index: 50;
-}
-.txt-color {
-  color: white;
 }
 
 .speciality {
@@ -315,7 +324,6 @@
 .form_book {
   display: flex;
   flex-wrap: wrap;
-  max-width: 563px;
   justify-content: space-between;
   margin-top: 10px;
 }
@@ -329,24 +337,8 @@
   padding: 45px 0;
 }
 
-.btn_book {
-  flex-grow: 2;
-  background: #E8C300;
-  color: white;
-  padding: 20px 0;
-}
-
-.input {
+.input-book {
   width: 277px;
-  font-size: 14px;
-  line-height: 19px;
-  text-indent: 20px;
-  color: rgba(51, 51, 51, 0.5);
-  background: #E5E5E5;
-  border-radius: 5px;
-  border: none;
-  padding: 20px 0;
-  margin-bottom: 10px;
 }
 
 .menu_wrap {
@@ -454,6 +446,45 @@
   padding: 45px 0;
 }
 
+.event_img {
+  position: relative;
+  max-width: 475px;
+  max-height: 475px;
+  margin: 0 auto;
+}
+
+.event_text {
+  font-family: "Banny Bold Round";
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-indent: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.event_name {
+  background-color: black;
+  border: 1px solid black;
+  display: flex;
+  width: 100%;
+  padding: 28px 0;
+}
+
+.rotate-right {
+  transform: rotate(90deg);
+  transform-origin: top right;
+  position: absolute;
+}
+
+.rotate-left {
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+}
+
 .galerie_wrap {
   display: flex;
   flex-wrap: wrap;
@@ -476,15 +507,6 @@
 
 .input-contact {
   width: 33%;
-  font-size: 14px;
-  line-height: 19px;
-  text-indent: 20px;
-  color: rgba(51, 51, 51, 0.5);
-  background: #E5E5E5;
-  border-radius: 5px;
-  border: none;
-  padding: 20px 0;
-  margin-bottom: 10px;
 }
 
 .message {
@@ -511,13 +533,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 5px;
-}
-
-.btn_contact {
-  background: #E8C300;
-  color: white;
-  width: 50%;
-  padding: 20px 0;
 }
 
 .footer {

@@ -70,30 +70,17 @@
 	display: block;
 	margin-top: 50px;
 }
-.btn{
-	display: inline-block;
-	border: none;
-	background:none;
-	cursor: pointer;
 
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 20px;
-	text-transform: uppercase;
 
-	border: 1px solid $firstColor;	
-	border-radius: 5px;
-
-	&:hover{
-		background: #E8C300;
-		transition: background 0.2s linear;
-	}
-
-}
 .btn-header{
 	width: 200px;
 	padding: 19px 0;
     color:$firstColor;
+    &:hover{
+		background: #E8C300;
+		transition: background 0.2s linear;
+	}
+
 }
 .btn+.btn{
 	margin-left: 40px;
