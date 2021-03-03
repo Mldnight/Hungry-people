@@ -8,11 +8,17 @@
 		display: flex;
 		justify-content: space-between;
 	}
+
+	@include breakpoint($sm){
+		display: none;
+	}
 }
 
 .nav{
-	width: 50%;
-
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+	
 	&_link{
 		font-weight: bold;
 		font-size: 12px;
@@ -20,8 +26,6 @@
 		color: white;
 		text-transform: uppercase;
 		text-decoration: none;
-
-		margin: 0 45px;
 	}
 
 	&-left{

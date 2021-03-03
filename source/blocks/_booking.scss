@@ -1,5 +1,9 @@
 .booking{
     padding-top: 100px;
+
+    @include breakpoint($md){
+        padding-top: 30px;
+    }
 }
 .form_book{
     display: flex;
@@ -7,6 +11,9 @@
     justify-content: space-between;
     
     margin-top: 10px;
+    margin-bottom: 15px;
+
+    
 }
 
 .booking_text{
@@ -18,10 +25,20 @@
     color: rgba(51, 51, 51, 0.5);
     
     padding: 45px 0;
+
+    @include breakpoint($md){
+        padding: 20px 0;
+
+    }
 }
 
 
 
 .input-book{
-    width: 277px;    
+    width: 48%;
+
+    @include breakpoint($md){
+        width: 100%;
+    }
+
 }

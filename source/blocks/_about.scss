@@ -1,5 +1,8 @@
 
 .about{
-	padding-top: 100px;
-    padding-bottom: 87px;
+	padding: 100px 0;
+
+    @include breakpoint($md){
+		padding: 40px 0;
+	}
 }

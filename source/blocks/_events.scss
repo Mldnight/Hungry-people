@@ -13,6 +13,10 @@
 
 	border-radius: 5px;
 	padding: 45px 0;
+
+	@include breakpoint($md){
+		padding: 20px 0;
+	}
 }
 
 .event_img{
@@ -22,7 +26,13 @@
     max-height:  475px;
         margin: 0 auto;
 }
-
+.event_name{
+	background-color: black;
+	border: 1px solid black;
+	display: flex;
+	width: 100%;
+	
+}
 .event_text{
 	font-family: $titleFont;
 	font-size: 24px;
@@ -30,15 +40,17 @@
 	color: #FFFFFF;
 	text-indent: 20px;
 	text-transform: uppercase;
+
 	margin: 0;
-}
-.event_name{
-	background-color: black;
-	border: 1px solid black;
-	display: flex;
-	width: 100%;
 	padding: 28px 0;
+
+	@include breakpoint ($e-sm){
+		font-size: 14px;
+		padding: 5px 0;
+	}
+
 }
+
 .rotate-right{
 	transform: rotate(90deg);
 	transform-origin: top right;
@@ -50,5 +62,8 @@
 	position: absolute;
 	bottom: 0;
 	left: 80px;
+	@include breakpoint ($e-sm){
+		left:36px;
+	}
 }
 

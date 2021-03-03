@@ -1,6 +1,7 @@
 
 .section_wrap{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -13,6 +14,10 @@
     text-transform: uppercase;
     
     padding: 40px 0;
+
+    @include breakpoint($md){
+    	padding: 20px 0;
+    }
 }
 .section_content{
 	display: flex;
@@ -22,6 +27,10 @@
     align-items: center;
     text-align: center;
     padding: 0 15px;
+
+    @include breakpoint($sm){
+    	width: 100%;
+    }
 }
 .section_title{
 	font-family: $titleFont;
@@ -37,6 +46,12 @@
 	&::after{
 		@include yellow_line;
 	}
+
+	@include breakpoint($md){
+		margin: 0 0 10px 0;
+
+		font-size: 30px;
+	}
 }
 
 .section_subtitle{
@@ -45,6 +60,10 @@
 	font-size: 18px;
 	line-height: 28px;
     text-align: center;
+
+    @include breakpoint($md){
+    	font-size: 16px;
+    }
 }
 .section_text{
 	font-style: normal;
@@ -56,8 +75,14 @@
 .section_img{
 	width: 47%;	
 	text-align: center;	
-	padding: 0 15px;
+	
 	line-height: 0;
+	padding: 0 15px;
+	padding-bottom: 15px;
+
+	@include breakpoint($sm){
+		width: 80%;
+	}
 }
 
 .txt-color{

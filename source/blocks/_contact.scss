@@ -2,12 +2,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
-	padding-bottom: 100px;
 }
 
 .input-contact{
-    width: 33%;    
+    width: 33%;
+
+    @include breakpoint ($sm){
+    	width: 100%;
+    }
 }
 
 .message{
@@ -34,11 +36,16 @@
 	line-height: 12px;
 	color: rgba(51, 51, 51, 0.5);
 
-	width: 50%;
-
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 
-	padding: 0 5px;
+	padding: 15px  5px 45px 5px;
+
+	@include breakpoint ($e-sm){
+		flex-direction: column;
+		align-items: start;
+		padding: 15px 0;
+		line-height: 18px;
+	}
 }

@@ -4,6 +4,10 @@
 	align-items: center;
 
 	margin-top: 70px;
+
+	@include breakpoint($md){
+		margin-top: 40px;
+	}
 }
 
 .menu_subtitle{
@@ -28,6 +32,13 @@
 
 	padding: 0;
 	margin-bottom: 50px;
+
+	@include breakpoint($md){
+		margin-bottom: 30px;
+	}
+	@include breakpoint ($e-sm){
+		font-size: 10px;
+	}
 }
 
 .categories_item{
@@ -39,9 +50,17 @@
 	&:last-child{
 		border: none;
 	}
+
+	@include breakpoint ($e-sm){
+		padding: 10px 0;
+	}
 }
 .menu_price{
 	margin-bottom: 100px;
+
+	@include breakpoint($md){
+		margin-bottom: 40px;
+	}
 }
 
 .price_list{
@@ -54,8 +73,12 @@
 	justify-content: space-between;
 }
 .price_list_item{
-	width: 30%;
+	width: 45%;
 	margin-bottom: 20px;
+
+	@include breakpoint($sm){
+		width: 100%;
+	}
 }
 .items_content{
 	display: flex;
@@ -67,6 +90,13 @@
 	font-size: 18px;
 	line-height: 18px;
 	color: #333333;
+
+	@include breakpoint($md){
+		font-size: 16px;
+	}
+	@include breakpoint ($e-sm){
+		font-size: 14px;
+	}
 	
 }
 .item-name{
@@ -77,7 +107,7 @@
 	    content: "";
 	    border-bottom: 2px dotted black;
 		flex: 1;
-	    
+	    min-width: 20px;
 	    margin-left: 10px;
 	}
 }
