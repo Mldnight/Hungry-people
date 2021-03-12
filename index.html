@@ -4,22 +4,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	
 
 	<title>Hungry people</title>
 </head>
 <body>
-	<header class="header">
+	<header class="header animate__animated animate__fadeInDown">
 		<div class="container">
 			<div class="header_nav">
-				<div class="nav nav-left">
+				<div class="nav">
 					<a href="" class="nav_link">home</a>
 					<a href="" class="nav_link">about</a>
 					<a href="" class="nav_link">team</a>
 					<a href="" class="nav_link">booking</a>
 				</div>
 				
-				<div class="nav nav-right">
+				<div class="nav">
 					<a href="" class="nav_link">menu</a>
 					<a href="" class="nav_link">galerie</a>
 					<a href="" class="nav_link">events</a>
@@ -34,9 +36,9 @@
 			<div class="container">
 				<div class="header_wrap">
 
-					<img class="header_img" src="img/Vector.png" alt="vector">
+					<img class="header_img animate__animated animate__fadeInDown" src="img/Vector.png" alt="vector">
 
-					<div class="header_inner">
+					<div class="header_inner  animate__animated animate__fadeIn">
 						<div class="timetable">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</div>
 						<div class="header_content">
 							<p class="header_text">restaurant</p>
@@ -53,7 +55,7 @@
 						</div>
 					</div>
 					
-					<button class="down_btn">
+					<button  class="down_btn animate__animated animate__fadeIn">
 						<img src="img/down.png" alt="">
 					</button>
 				</div>	
@@ -64,12 +66,12 @@
                 <div class="container">
                     <div class="section_wrap">
                         
-                        <div class="section_content">
+                        <div id="sectionContentLeft" class="section_content ">
                             <h1 class="section_title">about us</h1>
                             <h2 class="section_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h2>
                             <p class="section_text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
                         </div>
-                        <div class="section_img">
+                        <div id="sectionContentRight" class="section_img">
                         	
                         		<img src="img/about-img.jpg" alt="">
                         	
@@ -81,12 +83,12 @@
         	  
         <section class="team">
             <div class="container">
-               <div class="section_name txt-color">our team</div>
+               <div class="section_name txt-color animate__animated animate__zoomIn">our team</div>
                 <div class="section_wrap">
-                    <div class="section_img">
+                    <div id="sectionContentLeft" class="section_img">
                         <img src="img/team.jpg" alt="">
                     </div>
-                    <div class="section_content">
+                    <div id="sectionContentRight" class="section_content">
                         <h1 class="section_title txt-color">MASTER CHEF</h1>
                         <h2 class="section_subtitle txt-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h2>
                         <p class="section_text txt-color">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
@@ -99,7 +101,7 @@
         <section class="booking">
             <div class="container">
                 <div class="section_wrap">
-                    <div class="section_content">
+                    <div id="sectionContentLeft" class="section_content">
                         <h1 class="section_title">book a table</h1>
                         <form action="/" class="form_book">
                             <input type="text" class="input input-book" placeholder="Name">
@@ -118,7 +120,7 @@
                             <button class="btn btn_form">book now</button>
                         </form>
                     </div>
-                    <div class="section_img">
+                    <div id="sectionContentRight" class="section_img">
                         <img src="img/booking.jpg" alt="">
                     </div>
                 </div>
@@ -130,13 +132,13 @@
         
         <section class="speciality">
             <div class="container">
-                <div class="section_name txt-color"> specialties</div>
+                <div class="section_name txt-color animate__animated animate__zoomIn"> specialties</div>
                 <div class="section_wrap">
-                    <div class="section_img">
+                    <div id="sectionContentLeft" class="section_img">
                         <img class="img_main" src="img/speciality.jpg" alt="">
                     </div>
                     
-                   <div class="section_content">
+                   <div id="sectionContentRight" class="section_content">
                         <h1 class="section_title txt-color">chocolate pancakes</h1>
                         <h2 class="section_subtitle txt-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h2>
                         <p class="section_text txt-color">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
@@ -148,7 +150,7 @@
 
         <section class="menu">
             <div class="container">
-                <div class="menu_wrap">
+                <div id="sectionItem" class="menu_wrap">
                     <h1 class="section_title">delicious menu</h1>
                     <h2 class="section_subtitle menu_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h2>
                     <div class="category">
@@ -276,11 +278,11 @@
             </div>
         </section>
 
-        <section class="events">
+        <section  class="events">
             <div class="container">
-                <div class="section_name txt-color">private events</div>
+                <div class="section_name txt-color animate__animated animate__zoomIn">private events</div>
                 <div class="section_wrap">
-                    <div class="section_img">
+                    <div id="sectionContentLeft" class="section_img ">
                     	<div class="event_img" >
                     		<img src="img/event1.jpg" alt="">
                     		<div class="event_name rotate-right"><p class="event_text">weddings</p></div>
@@ -288,7 +290,7 @@
                     	
                         
                     </div>
-                    <div class="section_img">
+                    <div id="sectionContentRight" class="section_img">
                         <div class="event_img" >
                     		<img src="img/event2.jpg" alt="">
                     		<div class="event_name rotate-left"><p class="event_text ">corporate pzrties</p></div>
@@ -302,7 +304,7 @@
         </section>
 
         <div class="galerie">
-            <div class="galerie_wrap">
+            <div id="sectionItem" class="galerie_wrap">
                 <div class="galerie_item">
                     <img src="img/galery1.jpg" alt="">
                 </div>
@@ -320,11 +322,11 @@
 
         <section class="contact">
             <div class="container">
-                <div class="contact_wrap">
+                <div id="sectionItem" class="contact_wrap">
                     <h1 class="section_title">contact</h1>
                     <h2 class="section_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h2>
                     <form action="/" class="contact_form">
-                        <input type="text" class="input input-contact" placeholder="Name">
+                        <input type="text" class="input input-contact " placeholder="Name">
                         <input type="Email" class="input input-contact" placeholder="Email">
                         <input type="tel" class="input input-contact" placeholder="Phone">
                         <textarea class="message"></textarea>
@@ -343,5 +345,7 @@
             © Copyright <span class="bold">Mindblister</span> 2019
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -26,13 +26,11 @@
 		color: white;
 		text-transform: uppercase;
 		text-decoration: none;
+
+		&:hover{
+			border-bottom: 1px solid white;
+		}
 	}
 
-	&-left{
-		text-align: left;
-	}
-	&-right{
-		text-align: right;
-	}
 }
 

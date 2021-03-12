@@ -25,6 +25,8 @@
 
 	margin-top: 150px;
 
+	animation-duration: 2s;
+
 	@include breakpoint($lg){
 		margin-top: 90px;
 	}
@@ -150,7 +152,7 @@
 	margin: 10px 0;
     
 	&:hover{
-		background-color: lighten($secondColor, 10%);
+		background-color: lighten($secondColor, 30%);
 		transition: background-color 0.2s linear;
 	}
 

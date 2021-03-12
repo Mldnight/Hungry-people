@@ -5,6 +5,8 @@
 
 	margin-top: 70px;
 
+	animation-delay: 1s;
+	
 	@include breakpoint($md){
 		margin-top: 40px;
 	}
