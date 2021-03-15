@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
 	
 
 	<title>Hungry people</title>
@@ -133,18 +134,55 @@
         <section class="speciality">
             <div class="container">
                 <div class="section_name txt-color animate__animated animate__zoomIn"> specialties</div>
-                <div class="section_wrap">
-                    <div id="sectionContentLeft" class="section_img">
-                        <img class="img_main" src="img/speciality.jpg" alt="">
-                    </div>
-                    
-                   <div id="sectionContentRight" class="section_content">
-                        <h1 class="section_title txt-color">chocolate pancakes</h1>
-                        <h2 class="section_subtitle txt-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h2>
-                        <p class="section_text txt-color">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
-                    </div>
-                                       
-                </div>
+                <div class="slider"><!-- slider -->
+                	<div class="slider__wrapper">
+                		<div class="slider__items">
+	                		<div class="slider__item">
+	                			<div class="section_wrap">
+	                				<div id="sectionContentLeft" class="section_img">
+			                        <img class="img_main" src="img/speciality.jpg" alt="">
+			                    	</div>
+			                    
+				                   <div id="sectionContentRight" class="section_content">
+				                        <h1 class="section_title txt-color">chocolate pancakes</h1>
+				                        <h2 class="section_subtitle txt-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h2>
+				                        <p class="section_text txt-color">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+				                    </div>
+			                	</div>
+	                			
+	                		</div>
+	                		<div class="slider__item">
+								<div class="section_wrap">
+	                				<div id="sectionContentLeft" class="section_img">
+			                        <img class="img_main" src="img/booking.jpg" alt="">
+			                    	</div>
+			                    
+				                   <div id="sectionContentRight" class="section_content">
+				                        <h1 class="section_title txt-color">chocolate pancakes</h1>
+				                        <h2 class="section_subtitle txt-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h2>
+				                        <p class="section_text txt-color">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+				                    </div>
+			                	</div>
+	                		</div>
+	                		<div class="slider__item">
+								<div class="section_wrap">
+	                				<div id="sectionContentLeft" class="section_img">
+			                        <img class="img_main" src="img/about-img.jpg" alt="">
+			                    	</div>
+			                    
+				                   <div id="sectionContentRight" class="section_content">
+				                        <h1 class="section_title txt-color">chocolate pancakes</h1>
+				                        <h2 class="section_subtitle txt-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h2>
+				                        <p class="section_text txt-color">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+				                    </div>
+			                	</div>
+	                		</div>	
+	                	</div>
+                	</div>
+                       <a class="slider__control slider__control_prev" href="#" role="button"></a>
+   						<a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a> 
+            	</div> <!-- slider -->                          
+
             </div>
         </section>
 
@@ -347,5 +385,11 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+      <script>
+    slideShow('.slider', {
+      isAutoplay: true
+    });
+  </script>
 </body>
 </html>
