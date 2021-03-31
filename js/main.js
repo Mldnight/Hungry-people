@@ -9,7 +9,7 @@ function Scrolling(){
 			let sectionItemLeft = sectionItem.querySelector('#sectionContentLeft');
 			let sectionItemRight = sectionItem.querySelector('#sectionContentRight');
 			let sectionItemAll = sectionItem.querySelector('#sectionItem');
-			console.log(sectionItemAll);
+			
 			if (sectionItem.getBoundingClientRect().height
 			+window.innerHeight - sectionItem.getBoundingClientRect().bottom >50)
 			{

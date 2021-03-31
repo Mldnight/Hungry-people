@@ -10,7 +10,10 @@
 		width: 100%;
 		height: auto;
 	}
-
+	@include breakpoint ($md){
+		width: 50%;
+		line-height: 0;
+	}
 	@include breakpoint ($e-sm){
 		width: 100%;
 		line-height: 0;

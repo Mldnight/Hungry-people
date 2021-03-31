@@ -692,6 +692,12 @@
   width: 100%;
   height: auto;
 }
+@media (max-width: 768px) {
+  .galerie_item {
+    width: 50%;
+    line-height: 0;
+  }
+}
 @media (max-width: 415px) {
   .galerie_item {
     width: 100%;
@@ -760,6 +766,11 @@
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   padding: 45px 0;
+}
+
+.map {
+  width: 100%;
+  height: 475px;
 }
 
 html {
